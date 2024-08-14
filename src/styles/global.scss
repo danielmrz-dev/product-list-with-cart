@@ -1,0 +1,29 @@
+@use "../styles/variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Text", sans-serif;
+}
+
+body {
+    background-color: variables.$Rose-50;
+}
+
+main {
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    // flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        padding: 5.5rem 1rem;
+        flex-direction: row;
+        gap: .9rem;
+        align-items: start;
+    }
+}

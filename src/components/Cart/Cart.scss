@@ -1,0 +1,18 @@
+.cart {
+    min-width: 327px;
+    max-width: 500px;
+    background-color: #ffffff;
+    padding: 1.5rem 1.5rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .cart {
+        min-width: 375px;
+        position: sticky;
+        top: 88px;
+        margin: 0;
+    }   
+}

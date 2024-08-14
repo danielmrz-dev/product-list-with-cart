@@ -1,0 +1,44 @@
+@use "../../../styles/variables";
+
+.full-cart {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    h2 {
+        color: variables.$Red;
+    }
+    .order-total {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: .8rem;
+        font-weight: 500;
+        span:nth-child(2) {
+            font-weight: 700;
+            font-size: 1.25rem;
+        }
+    }
+    .carbon-neutral-delivery {
+        background-color: variables.$Rose-50;
+        padding: 1rem;
+        border-radius: 10px;
+        font-size: .8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    .confirm-order-btn {
+        background-color: variables.$Red;
+        border: none;
+        padding: 1rem;
+        border-radius: 30px;
+        color: variables.$Rose-50;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color .2s ease;
+        &:hover {
+            background-color: variables.$Rose-500;
+        }
+    }
+}

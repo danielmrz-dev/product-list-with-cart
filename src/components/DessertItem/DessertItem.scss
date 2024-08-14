@@ -1,0 +1,98 @@
+@use "../../styles/variables";
+
+.desserts-list-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    max-width: 327px;
+    .picture-and-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        .dessert-picture {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .add-to-card-btn {
+            border: 1px solid variables.$Red;
+            border-radius: 30px;
+            background-color: variables.$Rose-50;
+            font-size: .9rem;
+            position: absolute;
+            bottom: -17px;
+            overflow: hidden;
+            min-width: 150px;
+            .btn-content {
+                padding: .7rem 1.8rem;
+                background-color: transparent;
+                border: none;
+                display: flex;
+                align-items: center;
+                gap: .5rem;
+                cursor: pointer;
+                font-weight: 600;
+                transition: color .2s ease;
+                &:hover {
+                    color: variables.$Red;
+                }
+            }
+            .add-or-remove-item {
+                padding: .7rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 1rem;
+                background-color: variables.$Red;
+                color: white;
+                button {
+                    background-color: transparent;
+                    border: 1px solid white;
+                    border-radius: 50%;
+                    padding: 0.25rem;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    transition: background-color .2s ease;
+                    background: url(../../assets/images/icon-decrement-quantity.svg) no-repeat center center;
+                    background-position: 4.5px 8.5px;
+                    &:hover {
+                        background-image: url(../../assets/images/icon-decrement-quantity-red.svg);
+                        background-color: variables.$Rose-50;
+                    }
+                    &:nth-of-type(2) {
+                        background: url(../../assets/images/icon-increment-quantity.svg) no-repeat center center;
+                        background-position: 4.75px 4.5px;
+                        &:hover {
+                            background-image: url(../../assets/images/icon-increment-quantity-red.svg);
+                            background-color: variables.$Rose-50;
+                        }
+                    }
+                    img {
+                        height: 12px;
+                        width: 12px;
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+    }
+    .description-and-price {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        .dessert-type {
+            font-size: 0.85rem;
+            color: variables.$Rose-400;
+        }
+        .dessert-name {
+            font-size: 1rem;
+            font-weight: 500;
+            color: variables.$Rose-900;
+        }
+        .dessert-price {
+            color: variables.$Red;
+            font-weight: 600;
+        }
+    }
+}

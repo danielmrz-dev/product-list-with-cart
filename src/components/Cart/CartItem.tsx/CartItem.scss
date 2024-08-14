@@ -1,0 +1,51 @@
+@use "../../../styles//variables";
+
+.cart-item {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 0.5rem;
+    align-items: center;
+    font-size: .9rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid variables.$Rose-100;
+    h4 {
+        color: variables.$Rose-500;
+    }
+    .price-and-quantity {
+        grid-area: 2 / 1 / 3 / 2;
+        display: flex;
+        gap: .5rem;
+        .quantity {
+            font-weight: 600;
+            color: variables.$Red;
+        }
+        .unit-price {
+            color: variables.$Rose-400;
+        }
+        .total-price {
+            color: variables.$Rose-500;
+            font-weight: 500;
+        }
+    }
+    button {
+        grid-area: 1 / 2 / 3 / 3;
+        background-color: transparent;
+        background: url(../../../assets/images/icon-remove-item.svg) no-repeat;
+        background-position: 47.5%;
+        border: 1px solid variables.$Rose-400;
+        border-radius: 50%;
+        padding: .35rem;
+        justify-self: end;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        transition: border-color .2s ease, background-image .2s ease;
+        &:hover {
+            background-image: url(../../../assets/images/icon-remove-item-dark.svg);
+            border-color: variables.$Rose-900;
+        }
+        img {
+            opacity: 0;
+        }
+    }
+}

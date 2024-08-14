@@ -1,0 +1,32 @@
+@use "../../../styles/variables";
+
+.empty-cart {
+    min-width: 327px;
+    max-width: 500px;
+    background-color: #ffffff;
+    padding: 1.5rem 1.5rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    h2 {
+        align-self: flex-start;
+        color: variables.$Red;
+        font-size: 1.5rem;
+        margin-bottom: 2.5rem;
+    }
+    p {
+        color: variables.$Rose-500;
+        font-weight: 700;
+        font-size: .82rem;
+        margin-top: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .empty-cart {
+        position: sticky;
+        top: 88px;
+        margin: 0;
+    }   
+}
