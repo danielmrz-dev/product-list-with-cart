@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [My solution on Frontend Mentor Platform](https://www.frontendmentor.io/solutions/products-list-with-cart-built-w-react-typescript-RS5XseIsVI)
+- Live Site URL: [Live site](https://product-list-with-cart-ten-zeta.vercel.app/)
 
 ## My process
 
