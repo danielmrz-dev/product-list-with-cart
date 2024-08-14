@@ -70,7 +70,7 @@ export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
     
     useEffect(() => {
         async function getData() {
-            const data = await axios.get("./data.json");
+            const data = await axios.get("https://gist.githubusercontent.com/danielmrz-dev/d035b98c58a6c5fc9157bff02b47bcf5/raw/d98d8f4728ada3919aa00318a0cebf4ad14b1aa2/gistfile1.txt");
             const desserts = data.data;
             setDesserts(desserts)
         }
